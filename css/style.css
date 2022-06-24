@@ -155,7 +155,6 @@ nav .navbar-toggler {
 nav a {
   position: relative;
   margin: 20px;
-  padding: 30px 50px;
   background: none;
   border: 1px solid transparent;
   border-radius: 8px;
@@ -459,6 +458,34 @@ header .fa-chevron-down {
     width: 15%;
     -webkit-animation: rotate-right 100s infinite linear;
             animation: rotate-right 100s infinite linear;
+  }
+  .portfolio .bg-icon--five {
+    top: 60%;
+    right: 20%;
+    width: 15%;
+    -webkit-animation: rotate-left 130s infinite linear;
+            animation: rotate-left 130s infinite linear;
+  }
+  .portfolio .bg-icon--six {
+    bottom: 75%;
+    right: 20%;
+    width: 15%;
+    -webkit-animation: rotate-right 120s infinite linear;
+            animation: rotate-right 120s infinite linear;
+  }
+  .portfolio .bg-icon--seven {
+    top: 43%;
+    left: 23%;
+    width: 15%;
+    -webkit-animation: rotate-right 150s infinite linear;
+            animation: rotate-right 150s infinite linear;
+  }
+  .portfolio .bg-icon--eight {
+    top: 77%;
+    left: 43%;
+    width: 15%;
+    -webkit-animation: rotate-left 90s infinite linear;
+            animation: rotate-left 90s infinite linear;
   }
 }
 @media (min-width: 992px) {
