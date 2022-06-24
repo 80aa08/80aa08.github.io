@@ -1,0 +1,47 @@
+@keyframes rotate-right {
+	from {
+		transform: rotate(0);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate-left {
+	from {
+		transform: rotate(0);
+	}
+
+	to {
+		transform: rotate(-360deg);
+	}
+}
+@keyframes up {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	50% {
+		transform: translateY(-60%);
+	}
+	80% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes down {
+	0% {
+		transform: translateY(0);
+		z-index: -1;
+	}
+	50% {
+		transform: translateY(60%);
+		z-index: -1;
+	}
+	100% {
+		z-index: 1;
+	}
+}

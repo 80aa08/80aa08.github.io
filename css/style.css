@@ -1,0 +1,482 @@
+@-webkit-keyframes rotate-right {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-right {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate-left {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+@keyframes rotate-left {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes up {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes up {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes down {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    z-index: -1;
+  }
+  50% {
+    -webkit-transform: translateY(60%);
+            transform: translateY(60%);
+    z-index: -1;
+  }
+  100% {
+    z-index: 1;
+  }
+}
+@keyframes down {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    z-index: -1;
+  }
+  50% {
+    -webkit-transform: translateY(60%);
+            transform: translateY(60%);
+    z-index: -1;
+  }
+  100% {
+    z-index: 1;
+  }
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-padding-top: 82px;
+  color: #5893d4;
+}
+
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  background-color: #04040c;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-align: center;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #13bb4b;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+  text-transform: uppercase;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 80px;
+}
+nav .navbar-toggler {
+  border: none;
+}
+nav a {
+  position: relative;
+  margin: 20px;
+  padding: 30px 50px;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+}
+nav a::before,
+nav a::after {
+  display: block;
+  position: absolute;
+  content: "";
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -1;
+}
+nav a,
+nav i,
+nav .nav-link,
+nav .navbar-brand,
+nav .text {
+  font-size: 2em;
+  color: #f7b633;
+  -webkit-transition: 0.5s color;
+  transition: 0.5s color;
+}
+nav .fa-code {
+  color: #13bb4b;
+}
+nav a:hover,
+nav .fa-bars:hover,
+nav .nav-link:hover,
+nav .navbar-brand:hover,
+nav .text:hover {
+  color: #13bb4b;
+}
+nav .navbar-brand {
+  border: none;
+}
+nav .nav-link {
+  border-radius: 0;
+  overflow: visible;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+nav .nav-link::after,
+nav .nav-link::before {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+nav .nav-link::before {
+  top: 0;
+  left: 0;
+}
+nav .nav-link:focus {
+  color: #f7b633;
+}
+nav .nav-link::after {
+  bottom: 0;
+  right: 0;
+}
+nav .nav-link:hover {
+  border: 1px solid transparent;
+  color: #13bb4b;
+}
+nav .nav-link:hover::after {
+  bottom: -10px;
+  right: -10px;
+  border-bottom: 5px solid #13bb4b;
+  border-right: 5px solid #13bb4b;
+}
+nav .nav-link:hover::before {
+  top: -10px;
+  left: -10px;
+  border-top: 5px solid #13bb4b;
+  border-left: 5px solid #13bb4b;
+}
+nav .active {
+  color: #13bb4b !important;
+}
+
+header {
+  color: #f7b633;
+}
+header h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+header p {
+  font-size: 14px;
+}
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/game_big.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -10;
+}
+header .hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  z-index: 5;
+}
+header .btn-outline-warning {
+  text-transform: uppercase;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+header .fa-chevron-down {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 20px;
+  font-size: 3em;
+  color: #5893d4;
+}
+
+.aboutme {
+  color: #5893d4;
+}
+.aboutme .aboutme-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.aboutme .aboutme-card-text {
+  font-size: 1.4em;
+  margin-top: -35px;
+}
+.aboutme .aboutme-hover {
+  font-size: 3em;
+  -webkit-transition: 0.5s color;
+  transition: 0.5s color;
+}
+.aboutme .aboutme-hover:hover {
+  color: #f7b633;
+}
+.aboutme .fa-star {
+  font-size: 0.6em;
+}
+.aboutme .card-con {
+  display: none;
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  overflow: hidden;
+}
+.aboutme .card-in-con {
+  position: relative;
+  margin: 20px 80px;
+  width: 600px;
+  height: 800px;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+}
+.aboutme .img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.aboutme .one {
+  background-image: url("../img/video-game_small.png");
+}
+.aboutme .two {
+  background-image: url("../img/puchar_small.png");
+}
+.aboutme .three {
+  background-image: url("../img/limb_small.jpg");
+}
+.aboutme .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  opacity: 0;
+}
+.aboutme h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 3em;
+}
+.aboutme .text-one {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+.aboutme .text-two {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+.aboutme .card-in-con:hover .text {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  opacity: 1;
+}
+.aboutme .card-in-con:hover .one {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+.aboutme .card-in-con:hover .two {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  opacity: 0;
+}
+.aboutme .card-in-con:hover .three {
+  -webkit-animation: up 0.8s;
+          animation: up 0.8s;
+}
+.aboutme .card-in-con:hover .text-three {
+  -webkit-animation: down 0.8s;
+          animation: down 0.8s;
+}
+
+.portfolio {
+  position: relative;
+}
+.portfolio .descriptions h3 {
+  font-size: 5em;
+}
+.portfolio .descriptions p {
+  font-size: 2em;
+}
+.portfolio .container {
+  height: 50vh;
+  width: 40%;
+  border-radius: 50px;
+  z-index: 4;
+  color: #5893d4;
+  text-align: center;
+}
+.portfolio .bg-icon {
+  display: none;
+  color: #f7b633;
+}
+
+@media (min-width: 576px) {
+  .portfolio .bg-icon {
+    position: absolute;
+    display: block;
+    opacity: 0.05;
+    font-size: 40px;
+    z-index: 5;
+  }
+  .portfolio .bg-icon--one {
+    top: 200%;
+    width: 20%;
+    -webkit-animation: rotate-right 120s infinite linear;
+            animation: rotate-right 120s infinite linear;
+  }
+  .portfolio .bg-icon--two {
+    top: 0%;
+    left: 50%;
+    width: 30%;
+    -webkit-animation: rotate-right 130s infinite linear;
+            animation: rotate-right 130s infinite linear;
+  }
+  .portfolio .bg-icon--three {
+    top: 60%;
+    left: 36%;
+    width: 50%;
+    -webkit-animation: rotate-left 110s infinite linear;
+            animation: rotate-left 110s infinite linear;
+  }
+  .portfolio .bg-icon--four {
+    top: 35%;
+    left: 20%;
+    width: 15%;
+    -webkit-animation: rotate-right 100s infinite linear;
+            animation: rotate-right 100s infinite linear;
+  }
+}
+@media (min-width: 992px) {
+  .aboutme .card-con {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutme .card-con .text {
+    font-size: 3em;
+  }
+  .aboutme-hover {
+    font-size: 5em;
+  }
+}/*# sourceMappingURL=style.css.map */
