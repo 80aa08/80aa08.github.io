@@ -28,7 +28,6 @@
                 <div class="navbar-nav ms-auto text-center">
                     <a class="nav-link" href="#home">Home</a>
                     <a class="nav-link" href="#aboutme">o mnie</a>
-                    <a class="nav-link" href="#portfolio">portfolio</a>
                     <a class="nav-link" href="#contact">kontakt</a>
                 </div>
             </div>
@@ -48,7 +47,7 @@
     <main>
         <section class="aboutme py-4" id="aboutme">
             <div class="container">
-                <h2>o mnie</h2>
+                <h2 class="section-title py-4">O mnie</h2>
                 <div class="underline"></div>
                 <div class="skills_size">
                     <div class="row">
@@ -122,12 +121,14 @@
         <br>
         <br>
         <br>
-        <section class="portfolio" id="portfolio">
+        <section class="portfolio py-4" id="portfolio">
 
             <div class="container py-5 descriptions">
                 <h3>Witam</h3>
-                <p>Jestem technikiem informatykiem z Kęt. Mam pasję do tworzenia stron i programów.</p>
+                <p>Jestem absolwentem Powiatowego Zespołu nr 10 Szkół Mechaniczno-Elektrycznych im.Mikołaja Kopernika w
+                    Kętach na profilu Technik Informatyk.</p>
             </div>
+
 
             <i class="fa-solid fa-gamepad bg-icon bg-icon--one"></i>
             <i class="fa-solid fa-gamepad bg-icon bg-icon--two"></i>
@@ -139,27 +140,45 @@
             <i class="fa-solid fa-trophy bg-icon bg-icon--eight"></i>
 
         </section>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+
+        <section id="contact" class="contact my-4">
+
+            <div class="container">
+
+                <h2 class="section-title">Kontakt</h2>
+                <form class="contact__form">
+
+                    <div class="contact__form-box">
+                        <label for="name">Imie:</label>
+                        <input type="text" id="name">
+                    </div>
+
+                    <div class="contact__form-box">
+                        <label for="mail">Email:</label>
+                        <input type="mail" id="email">
+                    </div>
+
+                    <div class="contact__form-box">
+                        <label for="msg">Wiadomość:</label>
+                        <textarea id="mail" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <button type="submit" class="contact__form-btn">Send</button>
+
+
+                </form>
+
+        </section>
     </main>
+
+
+    <footer class="footer">
+
+        <p class="footer__bottom-text">&copy; <span class="footer__year"></span> MM</p>
+
+    </footer>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

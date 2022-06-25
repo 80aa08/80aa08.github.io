@@ -143,6 +143,11 @@ h3 {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.section-title {
+  text-transform: capitalize;
+  font-size: 5em;
+}
+
 nav {
   text-transform: uppercase;
   z-index: 1;
@@ -283,6 +288,9 @@ header .hero-text {
   text-align: center;
   z-index: 5;
 }
+header .hero-text .btn {
+  font-size: 2em;
+}
 header .btn-outline-warning {
   text-transform: uppercase;
   -webkit-transition: 0.7s;
@@ -330,7 +338,7 @@ header .fa-chevron-down {
   position: relative;
   margin: 20px 80px;
   width: 600px;
-  height: 800px;
+  height: 600px;
   -webkit-perspective: 800px;
           perspective: 800px;
 }
@@ -413,7 +421,7 @@ header .fa-chevron-down {
 }
 .portfolio .container {
   height: 50vh;
-  width: 40%;
+  width: 60%;
   border-radius: 50px;
   z-index: 4;
   color: #5893d4;
@@ -422,6 +430,75 @@ header .fa-chevron-down {
 .portfolio .bg-icon {
   display: none;
   color: #f7b633;
+}
+
+.contact {
+  color: #5893d4;
+}
+.contact__form {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.contact__form-box label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 3rem;
+}
+.contact__form-box textarea {
+  max-width: 100%;
+  width: 100%;
+  min-width: 100%;
+}
+.contact__form-box input,
+.contact__form-box textarea {
+  padding: 1em 2em;
+  margin-bottom: 2em;
+  width: 100%;
+  color: white;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.contact__form-box input:focus,
+.contact__form-box textarea:focus {
+  outline: none;
+  border: 1px solid #f7b633;
+}
+.contact__form-box:nth-child(1) {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+.contact__form-box:nth-child(2) {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+.contact__form-box:nth-child(3) {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+}
+.contact__form-btn {
+  grid-column: 1/3;
+  grid-row: 4/5;
+  padding: 1em;
+  border: 1px solid #1f3c88;
+  background: none;
+  font-size: 2em;
+  color: #5893d4;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+.contact__form-btn:hover, .contact__form-btn:focus {
+  outline: none;
+  background-color: #1f3c88;
+  color: #5893d4;
+}
+
+.footer {
+  width: 100%;
+  padding: 1.5em 1em;
+  text-align: center;
+  color: #5893d4;
+  font-size: 3em;
 }
 
 @media (min-width: 576px) {
@@ -489,6 +566,16 @@ header .fa-chevron-down {
   }
 }
 @media (min-width: 992px) {
+  .hero-text h1 {
+    font-size: 5em;
+  }
+  .hero-text p {
+    font-size: 2em;
+  }
+
+  .aboutme .skills_size {
+    font-size: 1.5em;
+  }
   .aboutme .card-con {
     display: -webkit-box;
     display: -ms-flexbox;
