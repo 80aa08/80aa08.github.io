@@ -420,9 +420,9 @@ header .fa-chevron-down {
   font-size: 2em;
 }
 .portfolio .container {
-  height: 50vh;
-  width: 60%;
+  width: 80%;
   border-radius: 50px;
+  padding: 2em;
   z-index: 4;
   color: #5893d4;
   text-align: center;
@@ -432,8 +432,28 @@ header .fa-chevron-down {
   color: #f7b633;
 }
 
+.links .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+}
+.links .container a {
+  display: block;
+  font-size: 5em;
+  padding: 0.2em;
+}
+
 .contact {
   color: #5893d4;
+}
+.contact h2 {
+  padding: 2em;
 }
 .contact__form {
   display: grid;
@@ -563,6 +583,10 @@ header .fa-chevron-down {
     width: 15%;
     -webkit-animation: rotate-left 90s infinite linear;
             animation: rotate-left 90s infinite linear;
+  }
+
+  .links .container a {
+    font-size: 10em;
   }
 }
 @media (min-width: 992px) {

@@ -329,9 +329,9 @@ header {
 	}
 
 	.container {
-		height: 50vh;
-		width: 60%;
+		width: 80%;
 		border-radius: 50px;
+		padding: 2em;
 		z-index: 4;
 		color: $third-color;
 		text-align: center;
@@ -343,8 +343,27 @@ header {
 	}
 }
 
+.links {
+	.container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 2em;
+
+		a {
+			display: block;
+			font-size: 5em;
+			padding: 0.2em;
+		}
+	}
+}
+
 .contact {
 	color: $third-color;
+
+	h2{
+		padding: 2em;
+	}
 
 	&__form {
 		display: grid;

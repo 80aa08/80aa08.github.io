@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\Kurs tworzenie stron Mateusz cz2"
+		},
+		{
+			"path": "..\\skonczone\\projekt Bitcoin"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "strony python"
+	}
+}
