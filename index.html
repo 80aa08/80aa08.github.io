@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F-ENG Engine. Future is now.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#333333">
+    <meta name="msapplication-TileColor" content="#333333">
+    <meta name="theme-color" content="#333333">
+    <script src="https://kit.fontawesome.com/38e677de70.js" crossorigin="anonymous"></script>
+    <link href="./css/hamburger.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav>
+            <div class="nav__items">
+                <div class="nav__logo">
+                    <a href="#hero"><img src="./img/engine.svg" alt="Logo"></a>
+                </div>
+                <div class="nav__menu">
+                    <button class="hamburger hamburger--emphatic" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+
+                    <div class="nav__menu__links mobile">
+                        <div class="con">
+                            <a class="link" href="#engine">Engine</a>
+                            <a class="link" href="#games">Games</a>
+                            <a class="link" href="#news">News</a>
+                            <a class="link" href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section id="hero">
+            <div class="hero">
+                <div class="hero__img"></div>
+                <div class="hero__text">
+                    <h1>F-ENG</h1>
+                    <p>The future is now old man</p>
+                    <a href="#engine">Try it out</a>
+                </div>
+                <a href="#games" class="arrow"><i class="fas fa-chevron-down bounce-top"></i></a>
+            </div>
+        </section>
+
+        <section id="games">
+
+            <div class="games">
+                <div class="col">
+                    <h2>Games</h2>
+                </div>
+                <div class="col">
+                    <img src="./img/terraria.jpg" alt="kekw" class="one">
+                    <img src="./img/minecraft.jpg" alt="kekw">
+                    <img src="./img/liga.webp" alt="kekw" class="two">
+                </div>
+            </div>
+
+        </section>
+
+        <section id="engine">
+
+            <div class="engine">
+                <h2>About the F-ENG</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iusto error sunt fugit doloremque
+                    perferendis veniam, laboriosam, non nobis quod hic eligendi aut tempore fugiat placeat autem, facere
+                    ex Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dicta, numquam ducimus magnam
+                    quos veniam excepturi nulla consequuntur optio ullam, provident tenetur impedit explicabo ut facilis
+                    expedita recusandae tempore repellendus?
+                    Libero suscipit veniam laborum eligendi laboriosam debitis nemo quis sit sequi. Beatae, odio!</p>
+                <a href="#contact">ABOUT F-ENG</a>
+            </div>
+
+        </section>
+
+        <section id="news">
+
+            <div class="news">
+                <div class="col">
+                    <h2>News</h2>
+                </div>
+                <div class="col">
+                    <img src="./img/terraria.jpg" alt="terraria gameplay" class="two">
+                    <img src="./img/minecraft.jpg" alt="minecraft gameplay">
+                    <img src="./img/liga.webp" alt="league of legends gameplay" class="one">
+                </div>
+                <a href="#hero">All NEWS</a>
+
+            </div>
+
+        </section>
+
+        <section id="contact">
+
+            <div class="contact">
+                <h2>Contact <span class="contact__text">us</span></h2>
+
+                <form action="index.html" method="get" id="form1">
+                    <div class="contact__up">
+                        <div class="lab">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name..." required>
+                        </div>
+                        <div class="lab">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="Your Email..." required>
+                        </div>
+                    </div>
+                    <div class="lab__down">
+                        <label for="msg">Message</label>
+                        <textarea id="msg" name="msg" placeholder="Your Message..." required></textarea>
+                    </div>
+                </form>
+                <div class="lab__down">
+                    <button type="submit" form="form1" value="Submit">Submit</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="footer" class="footer">
+            <footer>
+                <img src="./img/engine.svg" alt="Logo">
+            </footer>
+        </section>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
