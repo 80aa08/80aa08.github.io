@@ -3,6 +3,8 @@ const navLogo = document.querySelector('.nav__logo')
 const navMenu = document.querySelector('.nav__menu__links')
 const allNavItems = document.querySelectorAll('.link')
 
+console.log(contact)
+
 const handleNav = () => {
 	navBtn.classList.toggle('is-active')
 	navMenu.classList.toggle('mobile--active')
