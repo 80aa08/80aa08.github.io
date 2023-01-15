@@ -189,6 +189,7 @@ nav .nav__logo img {
   left: 50%;
   z-index: 5;
   width: 60px;
+  height: auto;
 }
 nav .nav__menu .hamburger {
   position: absolute;
@@ -357,6 +358,7 @@ nav .nav__menu .mobile .con a {
 .games img,
 .news img {
   width: 80%;
+  height: auto;
   padding: 2em;
   margin-left: auto;
   margin-right: auto;
@@ -542,6 +544,7 @@ nav .nav__menu .mobile .con a {
 }
 .footer footer img {
   width: 100px;
+  height: auto;
   margin-top: 20px;
 }
 
