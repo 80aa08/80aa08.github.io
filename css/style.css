@@ -125,6 +125,7 @@ section {
 
 #news {
   scroll-margin-top: 50px;
+  height: 130vh;
 }
 
 a {
